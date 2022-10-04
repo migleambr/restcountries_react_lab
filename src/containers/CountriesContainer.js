@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import CountriesList from "../components/CountriesList";
 import VisitedCountriesList from "../components/VisitedCountriesList";
 
@@ -21,12 +20,11 @@ const CountriesContainer = () => {
         fetchCountries();
     }, [])
 
-
     return(
         <>
             {/* <h1>I'm a country container!</h1> */}
             <CountriesList countries={countries} />
-            <VisitedCountriesList/>
+            {/* <VisitedCountriesList countries={countries}/> */}
         </>
     );
 }
